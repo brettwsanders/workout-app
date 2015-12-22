@@ -1,5 +1,6 @@
 h1, p, label, select,
-input, option, span {
+input, option, span,
+th, td {
   font-family: Verdana, sans-serif;
 }
 
@@ -41,6 +42,19 @@ select {
   width: 95%;
 }
 
+table {
+  margin: 0 auto;
+}
+
+th, td {
+  text-align: center;
+  padding: 0 10px;
+}
+
+th {
+  border-bottom: 1px solid #e9e9e9;
+}
+
 input[type=date] {
   font-size: 18px;
   margin-bottom: 10px;
@@ -80,10 +94,19 @@ input[type=submit]:hover {
   margin-bottom: 10px;
 }
 
-.workout-log-entry {
+.workout-log-container {
   background-color: #ffffff;
   border: 1px solid #d3d3d3;
-  width: 90%;
-  margin: 0 auto 15px auto;
-  padding-left: 15px;
+  width: 700px;
+  margin: 0 auto 25px auto;
+  padding: 15px;
+  overflow: auto;
+}
+
+.log-button {
+  color: #ffffff;
+  width: 30px;
+  height: 30px;
+  background-color: #0099cc;
+  border-style: none;
 }

@@ -1,3 +1,18 @@
-<div class="workout-log-entry" ng-repeat="workout in vm.workouts">
-  <p>{{workout.date}} {{workout.exercise}} {{workout.weight}}lbs. {{workout.sets}} X {{workout.reps}}</p>
-</div>
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Date</th>
+    <th>Exercise</th>
+    <th>Weight (lbs)</th>
+    <th>Sets X Reps</th>
+    <th>Details</th>
+  </tr>
+  <tr ng-repeat="workout in vm.workouts">
+    <td>{{workout.id}}</td>
+    <td>{{workout.date}}</td>
+    <td>{{workout.exercise}}</td>
+    <td>{{workout.weight}}</td>
+    <td>{{workout.sets}} X {{workout.reps}}</td>
+    <td><button class="log-button" ng-click="vm.getInfoById(workout.id)">>></button></td>
+  </tr>
+</table>

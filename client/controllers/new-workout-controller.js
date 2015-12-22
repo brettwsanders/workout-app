@@ -1,11 +1,17 @@
-angular.module('workoutApp')
-.controller('newWorkoutController', newWorkoutController);
+(function(){
 
-function newWorkoutController () {
-  var vm = this;
-  vm.newWorkout = {};
+  angular.module('workoutApp')
+  .controller('newWorkoutController', newWorkoutController);
 
-  vm.saveWorkout = function () {
-    console.log(vm.newWorkout);
-  };
-}
+  function newWorkoutController () {
+    var vm = this;
+    vm.newWorkout = {};
+
+    vm.saveWorkout = function () {
+      console.log(vm.newWorkout);
+    };
+  }
+
+})();
+
+

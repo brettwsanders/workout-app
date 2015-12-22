@@ -1,5 +1,6 @@
 [
   { 
+    "id": "0",
     "date": "12/16/2015",
     "exercise": "Squat",
     "weight": "100",
@@ -7,6 +8,7 @@
     "reps": "5"
   }, 
   { 
+    "id": "1",
     "date": "12/17/2015",
     "exercise": "Deadlift",
     "weight": "150",

@@ -1,1 +1,5 @@
-angular.module('workoutApp', []);
+(function(){
+
+  angular.module('workoutApp', []);
+  
+})();

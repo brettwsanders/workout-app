@@ -1,10 +1,12 @@
-angular.module('workoutApp')
-.factory('workoutFactory', workoutFactory);
+(function(){
+
+  angular.module('workoutApp')
+  .factory('workoutFactory', workoutFactory);
 
   workoutFactory.$inject = ['$http'];
 
   function workoutFactory ($http) {
-    
+
     var workoutServices = {
       getWorkoutLog: getWorkoutLog
     };
@@ -17,5 +19,8 @@ angular.module('workoutApp')
         url: '/workouts'
       });
     }
-  
   }
+  
+})();
+
+
