@@ -1,0 +1,16 @@
+[
+  { 
+    "date": "12/16/2015",
+    "exercise": "Squat",
+    "weight": "100",
+    "sets": "3",
+    "reps": "5"
+  }, 
+  { 
+    "date": "12/17/2015",
+    "exercise": "Deadlift",
+    "weight": "150",
+    "sets": "3",
+    "reps": "5"
+  }
+]

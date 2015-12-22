@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="workoutApp">
+<head>
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <title>Workout Tracker</title>
+</head>
+<body>
+  <h1>Workout Log</h1>
+  <div class="workout-form-container">
+    <workout-form></workout-form>
+  </div>
+  <div class="workout-form-container">
+    <workout-log></workout-log>
+  </div>
+
+  <script type="text/javascript" src="./lib/angular/angular.min.js"></script>
+  <script type="text/javascript" src="./lib/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="./app.js"></script>
+  <script type="text/javascript" src="./services/workout-services.js"></script>
+  <script type="text/javascript" src="./controllers/new-workout-controller.js"></script>
+  <script type="text/javascript" src="./controllers/workout-logs-controller.js"></script>
+  <script type="text/javascript" src="./directives/form-directive.js"></script>
+  <script type="text/javascript" src="./directives/log-directive.js"></script>
+</body>
+</html>

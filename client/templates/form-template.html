@@ -1,0 +1,16 @@
+<form method="post" class="new-workout" ng-submit="saveWorkout()">
+ <label for="field1"><span>Date: </span><input type="date" id="date-selector" name="field1" required></label>
+  <label for="field2"><span>Exercise: </span>
+    <select id="exercise-dropdown" name="field2" required>
+      <option value="squat">Squat</option>
+      <option value="deadlift">Deadlift</option>
+      <option value="press">Press</option>
+      <option value="bench">Bench Press</option>
+      <option value="clean">Power Clean</option>
+    </select>
+  </label>
+  <label><span>Weight: </span><input type="number" value="150" required></label>
+  <label><span>Sets: </span><input type="number" value="3" required></label>
+  <label><span>Reps: </span><input type="number" value="5" required></label>
+  <input type="submit" value="Submit">
+</form>
