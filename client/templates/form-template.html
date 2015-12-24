@@ -1,7 +1,7 @@
 <form method="post" class="new-workout" ng-submit="saveWorkout()">
- <label for="field1"><span>Date: </span><input type="date" id="date-selector" name="field1" required></label>
+ <label for="field1"><span>Date: </span><input type="date" id="date-selector" name="field1" ng-model="vm.newWorkout.date" required></label>
   <label for="field2"><span>Exercise: </span>
-    <select id="exercise-dropdown" name="field2" required>
+    <select id="exercise-dropdown" name="field2" ng-model="vm.newWorkout.exercise" required>
       <option value="squat">Squat</option>
       <option value="deadlift">Deadlift</option>
       <option value="press">Press</option>
@@ -9,8 +9,8 @@
       <option value="clean">Power Clean</option>
     </select>
   </label>
-  <label><span>Weight: </span><input type="number" value="150" required></label>
-  <label><span>Sets: </span><input type="number" value="3" required></label>
-  <label><span>Reps: </span><input type="number" value="5" required></label>
-  <input type="submit" value="Submit">
+  <label><span>Weight: </span><input type="number" value="150" ng-model="vm.newWorkout.weight"required></label>
+  <label><span>Sets: </span><input type="number" value="3" ng-model="vm.newWorkout.sets" required></label>
+  <label><span>Reps: </span><input type="number" value="5" ng-model="vm.newWorkout.reps" required></label>
+  <input type="submit" value="Submit" ng-click="vm.submitWorkout()">
 </form>

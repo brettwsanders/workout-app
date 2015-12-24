@@ -8,7 +8,8 @@
   function workoutFactory ($http) {
 
     var workoutServices = {
-      getWorkoutLog: getWorkoutLog
+      getWorkoutLog: getWorkoutLog,
+      postWorkout: postWorkout
     };
 
     return workoutServices;
@@ -17,6 +18,14 @@
       return $http({
         method: 'GET',
         url: '/workouts'
+      });
+    }
+
+    function postWorkout(workout) {
+      return $http({
+        method: 'POST',
+        url: '/workouts/new',
+        data: workout
       });
     }
   }
