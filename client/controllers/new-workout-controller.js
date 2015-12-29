@@ -3,9 +3,9 @@
   angular.module('workoutApp')
   .controller('newWorkoutController', newWorkoutController);
 
-  newWorkoutController.$inject = ['workoutFactory'];
+  newWorkoutController.$inject = ['workoutFactory', '$rootScope'];
 
-  function newWorkoutController (workoutFactory) {
+  function newWorkoutController (workoutFactory, $rootScope) {
     var vm = this;
     vm.newWorkout = {};
     vm.newWorkout.date = new Date();
@@ -19,10 +19,10 @@
     };
 
     vm.submitWorkout = function () {
-      console.log(vm.newWorkout);
       workoutFactory.postWorkout(vm.newWorkout)
       .success(function (status) {
         console.log(status);
+        $rootScope.$broadcast('newWorkoutSaved');
       });
     };
   }

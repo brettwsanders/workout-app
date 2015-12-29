@@ -25,7 +25,8 @@
       return $http({
         method: 'POST',
         url: '/workouts/new',
-        data: workout
+        headers: {'Content-Type': 'application/json'},
+        data: JSON.stringify(workout)
       });
     }
   }

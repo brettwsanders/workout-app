@@ -3,22 +3,29 @@
   angular.module('workoutApp')
   .controller('workoutLogsController', workoutLogsController);
 
-  workoutLogsController.$inject = ['workoutFactory'];
+  workoutLogsController.$inject = ['workoutFactory', '$rootScope'];
 
-  function workoutLogsController (workoutFactory) {
+  function workoutLogsController (workoutFactory, $rootScope) {
     var vm = this;
     
     vm.workouts = [];
     vm.error = '';
     vm.getInfoById = getInfoById;
+    updateLog();
 
-    workoutFactory.getWorkoutLog()
-    .then(function (data) {
-      vm.workouts = data.data;
-    })
-    .catch(function (err) {
-      vm.error = err;
+    $rootScope.$on('newWorkoutSaved', function() {
+      updateLog();
     });
+
+    function updateLog() {
+      workoutFactory.getWorkoutLog()
+      .then(function (data) {
+        vm.workouts = data.data;
+      })
+      .catch(function (err) {
+        vm.error = err;
+      }); 
+    }
 
     function getInfoById (id) {
       console.log(id);

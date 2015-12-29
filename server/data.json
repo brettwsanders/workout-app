@@ -1,18 +1,82 @@
 [
-  { 
-    "id": "0",
-    "date": "12/16/2015",
-    "exercise": "Squat",
-    "weight": "100",
-    "sets": "3",
-    "reps": "5"
-  }, 
-  { 
-    "id": "1",
-    "date": "12/17/2015",
-    "exercise": "Deadlift",
-    "weight": "150",
-    "sets": "3",
-    "reps": "5"
-  }
+    {
+        "id": 0,
+        "date": "12/16/2015",
+        "exercise": "Squat",
+        "weight": 100,
+        "sets": 3,
+        "reps": 5
+    },
+    {
+        "id": 1,
+        "date": "12/17/2015",
+        "exercise": "Deadlift",
+        "weight": 150,
+        "sets": 3,
+        "reps": 5
+    },
+    {
+        "date": "2015-12-29T22:29:29.832Z",
+        "exercise": "Squat",
+        "weight": 200,
+        "sets": 3,
+        "reps": 5,
+        "id": 2
+    },
+    {
+        "date": "2015-12-29T22:30:59.714Z",
+        "exercise": "Squat",
+        "weight": 200,
+        "sets": 3,
+        "reps": 5,
+        "id": 3
+    },
+    {
+        "date": "2015-12-29T22:51:14.113Z",
+        "exercise": "Squat",
+        "weight": 200,
+        "sets": 1,
+        "reps": 5,
+        "id": 4
+    },
+    {
+        "date": "2015-12-29T22:51:14.113Z",
+        "exercise": "Squat",
+        "weight": 200,
+        "sets": 1,
+        "reps": 5,
+        "id": 5
+    },
+    {
+        "date": "2015-12-29T22:51:14.113Z",
+        "exercise": "Squat",
+        "weight": 200,
+        "sets": 1,
+        "reps": 5,
+        "id": 6
+    },
+    {
+        "date": "2015-12-29T22:51:14.113Z",
+        "exercise": "Squat",
+        "weight": 200,
+        "sets": 1,
+        "reps": 5,
+        "id": 7
+    },
+    {
+        "date": "2015-12-29T22:51:14.113Z",
+        "exercise": "Squat",
+        "weight": 200,
+        "sets": 1,
+        "reps": 5,
+        "id": 8
+    },
+    {
+        "date": "2015-12-29T22:51:14.113Z",
+        "exercise": "Squat",
+        "weight": 200,
+        "sets": 1,
+        "reps": 5,
+        "id": 9
+    }
 ]
