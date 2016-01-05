@@ -9,7 +9,8 @@
 
     var workoutServices = {
       getWorkoutLog: getWorkoutLog,
-      postWorkout: postWorkout
+      postWorkout: postWorkout,
+      deleteWorkout: deleteWorkout
     };
 
     return workoutServices;
@@ -27,6 +28,14 @@
         url: '/workouts/new',
         headers: {'Content-Type': 'application/json'},
         data: JSON.stringify(workout)
+      });
+    }
+
+    function deleteWorkout(id) {
+      console.log('hitting the backend bruh');
+      return $http({
+        method: 'DELETE',
+        url: '/workouts/delete/' + id
       });
     }
   }

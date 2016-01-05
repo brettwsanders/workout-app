@@ -5,7 +5,11 @@ var bodyParser = require('body-parser');
 var fs = require('fs');
 
 var fileName = './data.json';
-var nextId = data.length;
+var nextId = getNextId(data);
+
+function getNextId (data) {
+  return Number(data[data.length - 1]['id']) + 1;
+};
 
 app.use(bodyParser.json()); // support json encoded bodies
 app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
@@ -17,11 +21,11 @@ app.get('/workouts', function (req, res) {
 });
 
 app.post('/workouts/new', function (req, res) {
+  console.log('data.length is ', data.length);
   var workout = req.body;
   workout.id = nextId;
   nextId++;
   data.push(workout);
-  console.log(data);
 
   fs.writeFile(fileName, JSON.stringify(data, null, 4), function(err) {
       if(err) {
@@ -30,6 +34,26 @@ app.post('/workouts/new', function (req, res) {
         console.log("JSON saved to " + fileName);
         res.send("New workout saved");
       }
+  });
+});
+
+app.delete('/workouts/delete/:id', function (req, res) {
+  var targetId = req.params.id;
+  var newData = [];
+  for (var i = 0; i < data.length; i++) {
+    if (data[i]["id"] !== Number(targetId)) {
+      newData.push(data[i]);
+    }
+  }
+  console.log(newData);
+
+  fs.writeFile(fileName, JSON.stringify(newData, null, 4), function(err) {
+    if (err) {
+      console.log(err);
+    } else {
+      console.log('Workout deleted.');
+      res.send(newData);
+    }
   });
 });
 

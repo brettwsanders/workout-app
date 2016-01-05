@@ -6,6 +6,7 @@
     <th>Weight (lbs)</th>
     <th>Sets X Reps</th>
     <th>Details</th>
+    <th>Delete</th>
   </tr>
   <tr ng-repeat="workout in vm.workouts">
     <td>{{workout.id}}</td>
@@ -14,5 +15,6 @@
     <td>{{workout.weight}}</td>
     <td>{{workout.sets}} X {{workout.reps}}</td>
     <td><button class="log-button" ng-click="vm.getInfoById(workout.id)">>></button></td>
+    <td><button class="delete-button" ng-click="vm.deleteEntry(workout.id)">X</button></td>
   </tr>
 </table>

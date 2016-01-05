@@ -1,22 +1,14 @@
 [
     {
-        "id": 0,
-        "date": "12/16/2015",
+        "date": "2016-01-05T01:32:19.418Z",
         "exercise": "Squat",
-        "weight": 100,
+        "weight": 200,
         "sets": 3,
-        "reps": 5
+        "reps": 5,
+        "id": 1
     },
     {
-        "id": 1,
-        "date": "12/17/2015",
-        "exercise": "Deadlift",
-        "weight": 150,
-        "sets": 3,
-        "reps": 5
-    },
-    {
-        "date": "2015-12-29T22:29:29.832Z",
+        "date": "2016-01-05T01:32:19.418Z",
         "exercise": "Squat",
         "weight": 200,
         "sets": 3,
@@ -24,7 +16,7 @@
         "id": 2
     },
     {
-        "date": "2015-12-29T22:30:59.714Z",
+        "date": "2016-01-05T01:32:19.418Z",
         "exercise": "Squat",
         "weight": 200,
         "sets": 3,
@@ -32,51 +24,51 @@
         "id": 3
     },
     {
-        "date": "2015-12-29T22:51:14.113Z",
+        "date": "2016-01-05T01:38:45.942Z",
         "exercise": "Squat",
         "weight": 200,
-        "sets": 1,
+        "sets": 3,
         "reps": 5,
-        "id": 4
+        "id": 10
     },
     {
-        "date": "2015-12-29T22:51:14.113Z",
+        "date": "2016-01-05T01:38:45.942Z",
         "exercise": "Squat",
         "weight": 200,
-        "sets": 1,
+        "sets": 3,
         "reps": 5,
-        "id": 5
+        "id": 11
     },
     {
-        "date": "2015-12-29T22:51:14.113Z",
+        "date": "2016-01-05T01:38:45.942Z",
         "exercise": "Squat",
         "weight": 200,
-        "sets": 1,
+        "sets": 3,
         "reps": 5,
-        "id": 6
+        "id": 12
     },
     {
-        "date": "2015-12-29T22:51:14.113Z",
+        "date": "2016-01-05T01:38:45.942Z",
         "exercise": "Squat",
         "weight": 200,
-        "sets": 1,
+        "sets": 3,
         "reps": 5,
-        "id": 7
+        "id": 13
     },
     {
-        "date": "2015-12-29T22:51:14.113Z",
+        "date": "2016-01-05T01:38:45.942Z",
         "exercise": "Squat",
         "weight": 200,
-        "sets": 1,
+        "sets": 3,
         "reps": 5,
-        "id": 8
+        "id": 14
     },
     {
-        "date": "2015-12-29T22:51:14.113Z",
+        "date": "2016-01-05T01:38:45.942Z",
         "exercise": "Squat",
         "weight": 200,
-        "sets": 1,
+        "sets": 3,
         "reps": 5,
-        "id": 9
+        "id": 15
     }
 ]

@@ -110,3 +110,12 @@ input[type=submit]:hover {
   background-color: #0099cc;
   border-style: none;
 }
+
+.delete-button {
+  color: #ffffff;
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  border-style: none;
+}
+
