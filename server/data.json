@@ -16,7 +16,7 @@
         "id": 2
     },
     {
-        "date": "2016-01-05T01:32:19.418Z",
+        "date": "1/4/2016",
         "exercise": "Squat",
         "weight": 200,
         "sets": 3,
@@ -24,7 +24,39 @@
         "id": 3
     },
     {
-        "date": "2016-01-05T01:38:45.942Z",
+        "date": "1/4/2016",
+        "exercise": "Squat",
+        "weight": 200,
+        "sets": 3,
+        "reps": 5,
+        "id": 4
+    },
+    {
+        "date": "1/4/2016",
+        "exercise": "Squat",
+        "weight": 200,
+        "sets": 3,
+        "reps": 5,
+        "id": 5
+    },
+    {
+        "date": "1/5/2016",
+        "exercise": "Squat",
+        "weight": 200,
+        "sets": 3,
+        "reps": 5,
+        "id": 6
+    },
+    {
+        "date": "1/4/2016",
+        "exercise": "Squat",
+        "weight": 200,
+        "sets": 3,
+        "reps": 5,
+        "id": 7
+    },
+    {
+        "date": "1/4/2016",
         "exercise": "Squat",
         "weight": 200,
         "sets": 3,
@@ -32,43 +64,11 @@
         "id": 10
     },
     {
-        "date": "2016-01-05T01:38:45.942Z",
+        "date": "1/4/2016",
         "exercise": "Squat",
         "weight": 200,
         "sets": 3,
         "reps": 5,
         "id": 11
-    },
-    {
-        "date": "2016-01-05T01:38:45.942Z",
-        "exercise": "Squat",
-        "weight": 200,
-        "sets": 3,
-        "reps": 5,
-        "id": 12
-    },
-    {
-        "date": "2016-01-05T01:38:45.942Z",
-        "exercise": "Squat",
-        "weight": 200,
-        "sets": 3,
-        "reps": 5,
-        "id": 13
-    },
-    {
-        "date": "2016-01-05T01:38:45.942Z",
-        "exercise": "Squat",
-        "weight": 200,
-        "sets": 3,
-        "reps": 5,
-        "id": 14
-    },
-    {
-        "date": "2016-01-05T01:38:45.942Z",
-        "exercise": "Squat",
-        "weight": 200,
-        "sets": 3,
-        "reps": 5,
-        "id": 15
     }
 ]

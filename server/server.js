@@ -9,7 +9,7 @@ var nextId = getNextId(data);
 
 function getNextId (data) {
   return Number(data[data.length - 1]['id']) + 1;
-};
+}
 
 app.use(bodyParser.json()); // support json encoded bodies
 app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
@@ -21,13 +21,13 @@ app.get('/workouts', function (req, res) {
 });
 
 app.post('/workouts/new', function (req, res) {
-  console.log('data.length is ', data.length);
   var workout = req.body;
   workout.id = nextId;
   nextId++;
+  workout.date = new Date(workout.date).toLocaleDateString();
   data.push(workout);
 
-  fs.writeFile(fileName, JSON.stringify(data, null, 4), function(err) {
+  fs.writeFile(fileName, JSON.stringify(data, null, 4), function (err) {
       if(err) {
         console.log(err);
       } else {

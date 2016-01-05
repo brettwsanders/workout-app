@@ -32,7 +32,6 @@
     }
 
     function deleteWorkout(id) {
-      console.log('hitting the backend bruh');
       return $http({
         method: 'DELETE',
         url: '/workouts/delete/' + id
