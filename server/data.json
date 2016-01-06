@@ -1,6 +1,6 @@
 [
     {
-        "date": "2016-01-05T01:32:19.418Z",
+        "date": "1/4/2016",
         "exercise": "Squat",
         "weight": 200,
         "sets": 3,
@@ -8,7 +8,7 @@
         "id": 1
     },
     {
-        "date": "2016-01-05T01:32:19.418Z",
+        "date": "1/4/2016",
         "exercise": "Squat",
         "weight": 200,
         "sets": 3,
@@ -16,7 +16,7 @@
         "id": 2
     },
     {
-        "date": "1/4/2016",
+        "date": "1/5/2016",
         "exercise": "Squat",
         "weight": 200,
         "sets": 3,
@@ -24,7 +24,7 @@
         "id": 3
     },
     {
-        "date": "1/4/2016",
+        "date": "1/5/2016",
         "exercise": "Squat",
         "weight": 200,
         "sets": 3,
@@ -32,7 +32,7 @@
         "id": 4
     },
     {
-        "date": "1/4/2016",
+        "date": "1/5/2016",
         "exercise": "Squat",
         "weight": 200,
         "sets": 3,
@@ -48,27 +48,11 @@
         "id": 6
     },
     {
-        "date": "1/4/2016",
-        "exercise": "Squat",
+        "date": "1/5/2016",
+        "exercise": "Press",
         "weight": 200,
         "sets": 3,
         "reps": 5,
         "id": 7
-    },
-    {
-        "date": "1/4/2016",
-        "exercise": "Squat",
-        "weight": 200,
-        "sets": 3,
-        "reps": 5,
-        "id": 10
-    },
-    {
-        "date": "1/4/2016",
-        "exercise": "Squat",
-        "weight": 200,
-        "sets": 3,
-        "reps": 5,
-        "id": 11
     }
 ]

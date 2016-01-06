@@ -8,7 +8,11 @@ var fileName = './data.json';
 var nextId = getNextId(data);
 
 function getNextId (data) {
-  return Number(data[data.length - 1]['id']) + 1;
+  if (data.length > 0) {
+    return Number(data[data.length - 1]['id']) + 1;
+  } else {
+    return 0;
+  }
 }
 
 app.use(bodyParser.json()); // support json encoded bodies
@@ -61,5 +65,5 @@ var server = app.listen(3000, function () {
   var host = server.address().address;
   var port = server.address().port;
 
-  console.log('Example app listening at http://%s:%s', host, port);
+  console.log('App listening at http://%s:%s', host, port);
 });
