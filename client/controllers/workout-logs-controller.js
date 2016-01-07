@@ -10,7 +10,6 @@
     
     vm.workouts = [];
     vm.error = '';
-    vm.getInfoById = getInfoById;
     vm.deleteEntry = deleteEntry;
     updateLog();
 
@@ -26,10 +25,6 @@
       .catch(function (err) {
         vm.error = err;
       }); 
-    }
-
-    function getInfoById (id) {
-      console.log(id);
     }
 
     function deleteEntry (id) {
