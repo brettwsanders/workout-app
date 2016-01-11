@@ -1,11 +1,11 @@
 (function(){
 
   angular.module('workoutApp')
-  .controller('newWorkoutController', newWorkoutController);
+  .controller('NewWorkoutController', NewWorkoutController);
 
-  newWorkoutController.$inject = ['workoutFactory', '$rootScope'];
+  NewWorkoutController.$inject = ['workoutFactory', '$rootScope'];
 
-  function newWorkoutController (workoutFactory, $rootScope) {
+  function NewWorkoutController (workoutFactory, $rootScope) {
     var vm = this;
     vm.newWorkout = {};
     vm.newWorkout.date = new Date();

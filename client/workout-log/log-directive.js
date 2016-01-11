@@ -6,7 +6,7 @@
   function workoutLog () {
     return {
       restrict: 'E',
-      controller: 'workoutLogsController',
+      controller: 'WorkoutLogsController',
       controllerAs: 'vm',
       templateUrl: 'workout-log/log-template.html',
       scope: {}

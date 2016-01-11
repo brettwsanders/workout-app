@@ -6,7 +6,7 @@
   function workoutForm () {
     return {
       restrict: 'E',
-      controller: 'newWorkoutController',
+      controller: 'NewWorkoutController',
       controllerAs: 'vm',
       templateUrl: 'new-workout-form/form-template.html',
       scope: {}

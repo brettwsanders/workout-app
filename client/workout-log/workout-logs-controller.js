@@ -1,11 +1,11 @@
 (function(){
 
   angular.module('workoutApp')
-  .controller('workoutLogsController', workoutLogsController);
+  .controller('WorkoutLogsController', WorkoutLogsController);
 
-  workoutLogsController.$inject = ['workoutFactory', '$rootScope'];
+  WorkoutLogsController.$inject = ['workoutFactory', '$rootScope'];
 
-  function workoutLogsController (workoutFactory, $rootScope) {
+  function WorkoutLogsController (workoutFactory, $rootScope) {
     var vm = this;
     
     vm.workouts = [];
