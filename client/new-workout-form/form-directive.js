@@ -8,7 +8,7 @@
       restrict: 'E',
       controller: 'newWorkoutController',
       controllerAs: 'vm',
-      templateUrl: './form-template.html',
+      templateUrl: 'new-workout-form/form-template.html',
       scope: {}
     };
   }
