@@ -8,7 +8,7 @@
       restrict: 'E',
       controller: 'workoutLogsController',
       controllerAs: 'vm',
-      templateUrl: './templates/log-template.html',
+      templateUrl: './log-template.html',
       scope: {}
     };
   }
